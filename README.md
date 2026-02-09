@@ -16,27 +16,21 @@ Local Machine
    
 GitHub Repository
 
-   |
+ |
    
 Terraform (IaC)
 
-   |
+  |
    
 AWS Infrastructure
 
- ├── VPC
- 
- ├── Public Subnet
- 
- ├── Internet Gateway
- 
- ├── Route Table
- 
- ├── Security Group
- 
- └── EC2 Instance
- 
-   |
+       ├── VPC
+       ├── Public Subnet
+       ├── Internet Gateway
+       ├── Route Table
+       ├── Security Group
+       └── EC2 Instance
+       |
        └── Docker Container (Node.js App on port 3000)
 
 ⚙️ Technologies Used -  
@@ -90,19 +84,19 @@ AWS Infrastructure
 
 Terraform plan showed 7 resources to be created :
 
-1.VPC
+1. VPC
 
-2.Subnet 
+2. Subnet 
 
-3.Internet Gateway
+3. Internet Gateway
 
-4.Route Table
+4. Route Table
 
-5.Route Table Association
+5. Route Table Association
 
-6.Security Group
+6. Security Group
 
-7.EC2 Instance
+7. EC2 Instance
 
 <h1>⚠️ Issues Faced During Terraform Apply</h1>
 
@@ -177,23 +171,23 @@ This ensures consistent builds and prevents broken code from being deployed.
 
 Screenshots are provided in the Screenshots/ directory:
 
-1.AWS CLI configured successfully
+1. AWS CLI configured successfully
 
-2.Node.js app running locally
+2. Node.js app running locally
 
-3.Docker image build
+3. Docker image build
 
-4.Docker container running
+4. Docker container running
 
-5.Terraform init
+5. Terraform init
 
-6.Terraform plan
+6. Terraform plan
 
-7.Terraform apply attempt
+7. Terraform apply attempt
 
-8.AWS EC2 instance launch confirmation
+8. AWS EC2 instance launch confirmation
 
-9.Port mapping verification
+9. Port mapping verification
 
 <h1>🧹 Git Repository Cleanup</h1>
 
@@ -222,6 +216,7 @@ AWS troubleshooting and cost-awareness
 Real-world error handling and debugging
 
 The assignment reflects industry-realistic challenges, not just ideal success paths.
+
 
 
 
