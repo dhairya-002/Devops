@@ -26,12 +26,18 @@ AWS Infrastructure
        |
        └── Docker Container (Node.js App on port 3000)
 
-⚙️ Technologies Used -  1. Node.js
-                        2. Docker
-                        3. Terraform
-                        4. AWS EC2
-                        5. GitHub
-                        6. Ubuntu 22.04
+⚙️ Technologies Used -  
+1. Node.js
+
+2. Docker
+
+3. Terraform
+                        
+4. AWS EC2
+                        
+5. GitHub
+
+6. Ubuntu 22.04
 
 
 <h1>▶️ Steps to Run the Application Locally</h1>
@@ -188,3 +194,4 @@ AWS troubleshooting and cost-awareness
 Real-world error handling and debugging
 
 The assignment reflects industry-realistic challenges, not just ideal success paths.
+
