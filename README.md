@@ -10,20 +10,13 @@ During implementation, multiple real-world issues were encountered (AWS Free Tie
 <h1>🏗️ Architecture Overview</h1>
 
     Local Machine 
-
       |  Node.js App
       |  Docker Image
-   
     GitHub Repository
-
       |
-   
     Terraform (IaC)
-
        |
-   
     AWS Infrastructure
-
        ├── VPC
        ├── Public Subnet
        ├── Internet Gateway
@@ -102,11 +95,11 @@ Terraform plan showed 7 resources to be created :
 
 ❌ EC2 Free Tier Eligibility Error - 
 
-While applying Terraform :
+- While applying Terraform :
 
    " InvalidParameterCombination: The specified instance type is not eligible for Free Tier "
 
-Root Cause - 
+- Root Cause - 
 
 AWS Free Tier eligibility depends on account type, region, and quota
 
@@ -114,15 +107,15 @@ Some instance types (t3.micro, t4g.micro) were rejected via Terraform
 
 However, AWS Console allowed manual instance creation
 
-Actions Taken - 
+- Actions Taken - 
 
-Verified Free Tier eligible instances using:
+Verified Free Tier eligible instances using :
 
 aws ec2 describe-instance-types \
 --filters Name=free-tier-eligible,Values=true
 
 
-Tried multiple instance types:
+- Tried multiple instance types:
 
 1. t3.micro
 
@@ -216,6 +209,7 @@ This project demonstrates :
 - Real-world error handling and debugging
 
 - The assignment reflects industry-realistic challenges, not just ideal success paths.
+
 
 
 
