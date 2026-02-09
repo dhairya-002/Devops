@@ -10,20 +10,33 @@ During implementation, multiple real-world issues were encountered (AWS Free Tie
 <h1>🏗️ Architecture Overview</h1>
 
 Local Machine 
+
    |  Node.js App
    |  Docker Image
+   
 GitHub Repository
+
    |
+   
 Terraform (IaC)
+
    |
+   
 AWS Infrastructure
+
  ├── VPC
+ 
  ├── Public Subnet
+ 
  ├── Internet Gateway
+ 
  ├── Route Table
+ 
  ├── Security Group
+ 
  └── EC2 Instance
-       |
+ 
+   |
        └── Docker Container (Node.js App on port 3000)
 
 ⚙️ Technologies Used -  
@@ -209,6 +222,7 @@ AWS troubleshooting and cost-awareness
 Real-world error handling and debugging
 
 The assignment reflects industry-realistic challenges, not just ideal success paths.
+
 
 
 
