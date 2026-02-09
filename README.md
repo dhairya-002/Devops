@@ -27,6 +27,7 @@ AWS Infrastructure
        └── Docker Container (Node.js App on port 3000)
 
 ⚙️ Technologies Used -  
+
 1. Node.js
 
 2. Docker
@@ -42,39 +43,39 @@ AWS Infrastructure
 
 <h1>▶️ Steps to Run the Application Locally</h1>
 
-1️⃣ Install dependencies
+1️⃣ Install dependencies - 
       npm install
 
-2️⃣ Start the application
+2️⃣ Start the application - 
       npm start
 
-3️⃣ Output
+3️⃣ Output - 
       Server running on port 3000
 
-4️⃣ Verify
+4️⃣ Verify - 
       Open: http://localhost:3000
 
 <h1>🐳 Steps to Build and Run Docker Image</h1>
 
-1️⃣ Build Docker image
+1️⃣ Build Docker image - 
       docker build -t 8byte-intern-app .
 
-2️⃣ Run Docker container
+2️⃣ Run Docker container - 
       docker run -p 3000:3000 8byte-intern-app
 
-3️⃣ Verification
+3️⃣ Verification - 
       http://localhost:3000
 
-🌍 Terraform Infrastructure Provisioning
+<h1>🌍 Terraform Infrastructure Provisioning</h1>
 
-1️⃣ Initialize Terraform
+1️⃣ Initialize Terraform - 
       terraform init
 
-2️⃣ Validate configuration
+2️⃣ Validate configuration - 
       terraform plan
 
 
-Terraform plan showed 7 resources to be created:
+Terraform plan showed 7 resources to be created :
 
 1.VPC
 
@@ -92,13 +93,13 @@ Terraform plan showed 7 resources to be created:
 
 <h1>⚠️ Issues Faced During Terraform Apply</h1>
 
-❌ EC2 Free Tier Eligibility Error
+❌ EC2 Free Tier Eligibility Error - 
 
-While applying Terraform:
+While applying Terraform :
 
-InvalidParameterCombination: The specified instance type is not eligible for Free Tier
+   " InvalidParameterCombination: The specified instance type is not eligible for Free Tier "
 
-Root Cause
+Root Cause - 
 
 AWS Free Tier eligibility depends on account type, region, and quota
 
@@ -122,17 +123,17 @@ Tried multiple instance types:
 
 3. t3.nano
 
-Documented the issue instead of force-deploying paid resources
+Documented the issue instead of force-deploying paid resources - 
 
 <h1>✅ Terraform Plan–Based Submission Approach</h1>
 
-To avoid unwanted billing:
+To avoid unwanted billing :
 
 Infrastructure was validated using terraform plan
 
 Resources were partially created and verified
 
-Screenshots were captured for:
+Screenshots were captured for :
 
 Terraform init
 
@@ -145,19 +146,17 @@ AWS EC2 launch success (manual)
 This approach ensures no unexpected charges while still demonstrating Terraform proficiency.
 
 
-Application accessibility verified using EC2 public IP.
-
 <h1>🔁 GitHub Actions Workflow (Conceptual)</h1>
 
-A GitHub Actions CI workflow is designed to:
+A GitHub Actions CI workflow is designed to :
 
-Trigger on push to main
+1. Trigger on push to main
 
-Install Node.js dependencies
+2. Install Node.js dependencies
 
-Build Docker image
+3. Build Docker image
 
-Validate application build
+4. Validate application build
 
 This ensures consistent builds and prevents broken code from being deployed.
 
@@ -166,18 +165,26 @@ This ensures consistent builds and prevents broken code from being deployed.
 Screenshots are provided in the Screenshots/ directory:
 
 1.AWS CLI configured successfully
+
 2.Node.js app running locally
+
 3.Docker image build
+
 4.Docker container running
+
 5.Terraform init
+
 6.Terraform plan
+
 7.Terraform apply attempt
+
 8.AWS EC2 instance launch confirmation
+
 9.Port mapping verification
 
 <h1>🧹 Git Repository Cleanup</h1>
 
-To follow best practices:
+To follow best practices :
 
 Terraform state files were removed from Git tracking
 
@@ -189,7 +196,7 @@ This prevents security risks and GitHub size-limit errors.
 
 <h1>🏁 Conclusion</h1>
 
-This project demonstrates:
+This project demonstrates :
 
 Practical DevOps workflow understanding
 
@@ -202,5 +209,6 @@ AWS troubleshooting and cost-awareness
 Real-world error handling and debugging
 
 The assignment reflects industry-realistic challenges, not just ideal success paths.
+
 
 
