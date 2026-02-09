@@ -77,11 +77,17 @@ AWS Infrastructure
 Terraform plan showed 7 resources to be created:
 
 1.VPC
-2.Subnet
+
+2.Subnet 
+
 3.Internet Gateway
+
 4.Route Table
+
 5.Route Table Association
+
 6.Security Group
+
 7.EC2 Instance
 
 <h1>⚠️ Issues Faced During Terraform Apply</h1>
@@ -110,9 +116,11 @@ aws ec2 describe-instance-types \
 
 Tried multiple instance types:
 
-t3.micro
-t4g.micro
-t3.nano
+1. t3.micro
+
+2. t4g.micro
+
+3. t3.nano
 
 Documented the issue instead of force-deploying paid resources
 
@@ -194,4 +202,5 @@ AWS troubleshooting and cost-awareness
 Real-world error handling and debugging
 
 The assignment reflects industry-realistic challenges, not just ideal success paths.
+
 
