@@ -9,20 +9,20 @@ During implementation, multiple real-world issues were encountered (AWS Free Tie
 
 <h1>🏗️ Architecture Overview</h1>
 
-Local Machine 
+    Local Machine 
 
-   |  Node.js App
-   |  Docker Image
+      |  Node.js App
+      |  Docker Image
    
-GitHub Repository
+    GitHub Repository
 
- |
+      |
    
-Terraform (IaC)
+    Terraform (IaC)
 
-  |
+       |
    
-AWS Infrastructure
+    AWS Infrastructure
 
        ├── VPC
        ├── Public Subnet
@@ -136,21 +136,21 @@ Documented the issue instead of force-deploying paid resources -
 
 To avoid unwanted billing :
 
-Infrastructure was validated using terraform plan
+- Infrastructure was validated using terraform plan
 
-Resources were partially created and verified
+- Resources were partially created and verified
 
-Screenshots were captured for :
+- Screenshots were captured for :
 
-Terraform init
+   Terraform init
 
-Terraform plan
+   Terraform plan
 
-Partial terraform apply
+   Partial terraform apply
 
-AWS EC2 launch success (manual)
-
-This approach ensures no unexpected charges while still demonstrating Terraform proficiency.
+   AWS EC2 launch success (manual)
+  
+- This approach ensures no unexpected charges while still demonstrating Terraform proficiency.
 
 
 <h1>🔁 GitHub Actions Workflow (Conceptual)</h1>
@@ -193,29 +193,30 @@ Screenshots are provided in the Screenshots/ directory:
 
 To follow best practices :
 
-Terraform state files were removed from Git tracking
+- Terraform state files were removed from Git tracking
 
-.terraform provider binaries excluded
+- .terraform provider binaries excluded
 
-.gitignore added to prevent large/binary files
+- .gitignore added to prevent large/binary files
 
-This prevents security risks and GitHub size-limit errors.
+- This prevents security risks and GitHub size-limit errors.
 
 <h1>🏁 Conclusion</h1>
 
 This project demonstrates :
 
-Practical DevOps workflow understanding
+- Practical DevOps workflow understanding
 
-Docker-based application deployment
+- Docker-based application deployment
 
-Terraform infrastructure design
+- Terraform infrastructure design
 
-AWS troubleshooting and cost-awareness
+- AWS troubleshooting and cost-awareness
 
-Real-world error handling and debugging
+- Real-world error handling and debugging
 
-The assignment reflects industry-realistic challenges, not just ideal success paths.
+- The assignment reflects industry-realistic challenges, not just ideal success paths.
+
 
 
 
